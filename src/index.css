@@ -1,0 +1,23 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; }
+
+/* Fondo y tipografía global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #1a1033, #4a2b70);
+  color: #d8b9d1;
+}
+
+/* Imágenes y botones genéricos */
+img { max-width: 100%; display: block; }
+
+button {
+  background-color: #00cfff;
+  color: #000;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+button:hover { opacity: .8; }
