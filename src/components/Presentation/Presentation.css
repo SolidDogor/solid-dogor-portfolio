@@ -1,5 +1,5 @@
 .presentation {
-  background: linear-gradient(to bottom, rgba(26,9,63,0.15) 24%, rgba(68, 24, 165, 0.15) 75%);
+  /* background: linear-gradient(to bottom, rgba(26,9,63,0.15) 24%, rgba(68, 24, 165, 0.15) 75%); */
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;

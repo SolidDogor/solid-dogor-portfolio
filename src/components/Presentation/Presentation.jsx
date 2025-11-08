@@ -7,7 +7,7 @@ export default function Presentation() {
                 <img
                     src="./src/assets/foto-perfil.png"
                     alt="Foto de perfil"
-                        className="foto-perfil"
+                    className="foto-perfil"
                 />
             </div>
             <div className="informacion">
@@ -28,7 +28,7 @@ export default function Presentation() {
                         <img
                             src="./src/assets/instagram.png"
                             alt="Logo de instagram"
-                        
+                            className="logo-instagram"
                         />
                     </a>
                     <a href="https://linkedin.com/in/alejandro-matias-olivos-rodriguez-95201b107">
