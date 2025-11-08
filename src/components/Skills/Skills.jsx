@@ -1,5 +1,6 @@
 import "./Skills.css";
 import TechIcon from "./TechIcon";
+import { Technologies } from "../../data.js";
 
 export default function Skills() {
     return (
@@ -7,17 +8,15 @@ export default function Skills() {
             <div className="titulo">
                 Tecnologías y Saberes
             </div>
-            <div className="fondo-tecnologias">
+            <div className="seccion-tecnologias">
+                <div className="fondo-tecnologias"/>
                 <div className="tecnologias">
-                    <TechIcon/>
-                    <TechIcon/>
-                    <TechIcon/>
-                    <TechIcon/>
-                    <TechIcon/>
-                    <TechIcon/>
-                    <TechIcon/>
+                    {Technologies.map((technologieItem, index)=>
+                        <TechIcon key={index} {...technologieItem} />
+                    )}
                 </div> 
             </div>
+
             <div className="saberes">
                 <div className="descripcion">
                     aleman

@@ -5,19 +5,33 @@
   justify-items: center;
 }
 
+.seccion-tecnologias {
+  position: relative;
+  height: 120px; 
+  width: 500%; 
+  background-color: rgb(183,183,183);
+  justify-items: center;
+}
+
 .fondo-tecnologias {
-  display: grid;
-  background-color: rgba(183, 183, 183, 1);
-  height: 120px;
-  align-items: center;
+  position: absolute; 
+  bottom: 10px;
+  left: 0px;
+  right: -1px;
+  top: 10px;
+  background-color: rgb(255,226,226);
 }
 
 .tecnologias {
-  height: 100px;
-  display: flex;
-  gap: 75px;
-  background-color: rgba(255, 226, 226, 1);
+  position: absolute; 
+  margin: 20px 0px;
+  box-sizing: border-box; 
+  display: flex; 
+  align-content: stretch;
   align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 0px 150px;
 }
 
 .saberes {

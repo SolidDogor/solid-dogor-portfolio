@@ -1,4 +1,9 @@
 .tech-icon {
-    background-color: white;
-    height: 80px;
+    pointer-events: none; 
+    position: relative; 
+    inset: 0px; 
+    height: 80px; 
+    max-width: none; 
+    flex-shrink: 0; 
+    object-fit: cover;
 }
