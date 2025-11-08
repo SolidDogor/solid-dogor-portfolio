@@ -1,6 +1,6 @@
 import "./Skills.css";
 import TechIcon from "./TechIcon";
-import { Technologies } from "../../data.js";
+import { TECHNOLOGIES_DATA } from "../../data.js";
 
 export default function Skills() {
     return (
@@ -11,7 +11,7 @@ export default function Skills() {
             <div className="seccion-tecnologias">
                 <div className="fondo-tecnologias"/>
                 <div className="tecnologias">
-                    {Technologies.map((technologieItem, index)=>
+                    {TECHNOLOGIES_DATA.map((technologieItem, index)=>
                         <TechIcon key={index} {...technologieItem} />
                     )}
                 </div> 

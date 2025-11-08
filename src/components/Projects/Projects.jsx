@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import "./Projects.css";
+import { PROJECTS_DATA } from "../../data.js";
 
 export default function Projects() {
     return (
@@ -8,12 +9,9 @@ export default function Projects() {
                 Proyectos
             </div>
             <div className="proyectos">
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
+                {PROJECTS_DATA.map((projectItem, index)=>
+                    <ProjectCard key={index} {...projectItem} />
+                )}
             </div>
         </div>
     );

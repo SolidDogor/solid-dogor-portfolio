@@ -6,7 +6,18 @@ import htmlImage from './assets/Technologies/html.png';
 import cssImage from './assets/Technologies/css.png';
 import reactImage from './assets/Technologies/react.png';
 
-export const Technologies = [
+import amoresDulcesImage from './assets/Projects/logo-amores-dulces.png';
+
+export const PROJECTS_DATA = [
+    {
+        imagePath: amoresDulcesImage,
+        title: 'Amores Dulces',
+        description: 'Página web de venta de postres caseros.',
+        url: 'https://www.instagram.com/amores.dulces.postres',
+    },
+];
+
+export const TECHNOLOGIES_DATA = [
     {
         imagePath: cppImage,
         technologieName: 'C++',

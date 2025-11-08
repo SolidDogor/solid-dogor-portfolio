@@ -1,23 +1,25 @@
 import './ProjectCard.css';
 
-export default function ProjectCard() {
+export default function ProjectCard({imagePath, title, description, url}) {
     return (
-        <div className="project-card">
-            <div className="imagen-proyecto">
-                <img
-                    src="./src/assets/foto-perfil.png"
-                    alt="Foto de perfil"
-                    className="imagen-proyecto"
-                />
-            </div>
-            <div className="informacion-proyecto">
-                <div className="nombre-proyecto">
-                    Amores Dulces
+        <a href={url} className='proyect-link'>
+            <section className="project-card">
+                <div className="imagen-proyecto">
+                    <img
+                        src={imagePath}
+                        alt={title}
+                        className="imagen-proyecto"
+                    />
                 </div>
-                <div className="descripcion-proyecto">
-                    Página web de venta de postres caseros.
+                <div className="informacion-proyecto">
+                    <div className="nombre-proyecto">
+                        {title}
+                    </div>
+                    <div className="descripcion-proyecto">
+                        {description}
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </a>
     );
 }
