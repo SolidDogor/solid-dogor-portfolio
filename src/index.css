@@ -4,8 +4,8 @@ html, body, #root { height: 100%; }
 /* Fondo y tipografía global */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #1a1033, #4a2b70);
   color: #d8b9d1;
+  background: linear-gradient(to bottom, #1A093F 0%, #15004A 45%, #050011 100%);
 }
 
 /* Imágenes y botones genéricos */

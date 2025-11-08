@@ -1,4 +1,5 @@
-import Header from './components/Header/Header'
+import Presentation from './components/Presentation/Presentation'
+import Jobs from './components/Jobs/Jobs'
 import Projects from './components/Projects/Projects'
 import Skills from './components/Skills/Skills'
 import About from './components/About/About'
@@ -8,7 +9,8 @@ import './App.css'
 function App() {
   return (
     <div className='container'>
-      <Header/>
+      <Presentation/>
+      {/* <Jobs/> */}
       <Projects/>
       <Skills/>
       <About/>

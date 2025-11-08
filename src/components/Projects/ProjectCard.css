@@ -1,0 +1,29 @@
+.project-card {
+  background-color: rgba(96, 51, 51, 1);
+  padding: 18px 17px;
+  display: grid;
+  gap: 20px;
+  border-radius: 5%;
+}
+
+.imagen-proyecto {
+  max-width: 265px;
+  max-height: 180px;
+}
+
+.nombre-proyecto {
+  background: linear-gradient(to bottom, #ff9730, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text; /* Para navegadores Webkit */
+  color: transparent;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.descripcion-proyecto {
+  max-width: 265px;
+  max-height: 106px;
+  color: #CECECE;
+  font-family: 'Fira Code', monospace;
+  font-size: 18px;
+}

@@ -1,33 +1,34 @@
-import "./Header.css";
+import "./Presentation.css";
 
-export default function Header() {
+export default function Presentation() {
     return(
-        <header className="header">
-            <div className="seccion-sobre-mi">
+        <div className="presentation">
+            <div className="foto-perfil">
                 <img
                     src="./src/assets/foto-perfil.png"
                     alt="Foto de perfil"
-                    className="foto-perfil"
+                        className="foto-perfil"
                 />
-                <div className="informacion">
-                    <div className="nombre">
-                        <p>Alejandro Olivos</p>
-                    </div>
-                    <div className="descripcion">
-                        <p>Ingenierio de Software<br/>
-                            Estudiante de USIL<br/>
-                            Apasionado de la programación y el arte
-                        </p>
-                    </div>
-                </div>
             </div>
-            <div className="seccion-accesibles">
+            <div className="informacion">
+                <div className="nombre">
+                    <p>Alejandro Olivos</p>
+                </div>
+                <div className="descripcion">
+                    <p>
+                        Apasionado por la programación y la música. A raíz de
+                        los varios años que llevo enseñando, me gusta desarollar
+                        apps relacionadas al aprendizaje, y por qué no, algo de 
+                        música y juegos :)
+                    </p>
+                </div>
+                <div className="seccion-accesibles">
                 <div className="redes">
                     <a href="https://www.instagram.com/alejandr0lirod">
                         <img
                             src="./src/assets/instagram.png"
                             alt="Logo de instagram"
-                            
+                        
                         />
                     </a>
                     <a href="https://linkedin.com/in/alejandro-matias-olivos-rodriguez-95201b107">
@@ -37,7 +38,7 @@ export default function Header() {
                             className="logo-linkedin"
                         />
                     </a>
-                    <a href="https://github.com/SolidDogor">
+                    <a href="https://github.com/SolidDogor">                            
                         <img
                             src="./src/assets/github.png"
                             alt="Logo de github"
@@ -56,7 +57,7 @@ export default function Header() {
                     </button>
                 </div>
             </div>
-
-        </header>
+            </div>
+        </div>
     );
 }
