@@ -17,7 +17,7 @@
   position: absolute; 
   bottom: 10px;
   left: 0px;
-  right: -1px;
+  right: 0px;
   top: 10px;
   background-color: rgb(255,226,226);
 }
@@ -38,4 +38,41 @@
   background-color: rgba(96, 51, 51, 1);
   width: 980px;
   height: 237px;
+}
+
+@media (max-width: 800px) {
+  .skills {
+    padding-top: 30px;
+    gap: 100px;
+  }
+
+  .seccion-tecnologias {
+    height: 90px; 
+  }
+
+  .fondo-tecnologias {
+    position: absolute; 
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    top: 10px;
+    background-color: rgb(255,226,226);
+  }
+
+  .tecnologias {
+    position: absolute; 
+    margin: 28px 0px;
+    box-sizing: border-box; 
+    display: flex; 
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0px 150px;
+  }
+
+  .saberes {
+    width: 335px;
+    height: 169px;
+  }
 }

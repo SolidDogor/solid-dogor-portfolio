@@ -7,13 +7,3 @@
   max-width: 1440px;
   margin: 0 auto; 
 }
-
-/* Padding lateral adaptable para 1366 y menores */
-@media (max-width: 1200px) {
-  .container { padding-left: 80px; padding-right: 80px; }
-}
-@media (max-width: 768px) {
-  .container { padding-left: 24px; padding-right: 24px; }
-}
-
-.section { padding: 40px 0; }

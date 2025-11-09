@@ -7,3 +7,7 @@
     flex-shrink: 0; 
     object-fit: cover;
 }
+
+@media (max-width: 800px) {
+    .tech-icon { height: 35px; }
+}
