@@ -1,11 +1,15 @@
 import "./Presentation.css";
+import profileImage from '../../assets/Presentation/foto-perfil.png';
+import cvImage from '../../assets/Presentation/archivo.png';
+import Social from './Social';
+import { SOCIAL_DATA } from "../../data";
 
 export default function Presentation() {
     return(
         <div className="presentation">
             <div className="foto-perfil">
                 <img
-                    src="./src/assets/foto-perfil.png"
+                    src={profileImage}
                     alt="Foto de perfil"
                     className="foto-perfil"
                 />
@@ -24,33 +28,15 @@ export default function Presentation() {
                 </div>
                 <div className="seccion-accesibles">
                 <div className="redes">
-                    <a href="https://www.instagram.com/alejandr0lirod">
-                        <img
-                            src="./src/assets/instagram.png"
-                            alt="Logo de instagram"
-                            className="logo-instagram"
-                        />
-                    </a>
-                    <a href="https://linkedin.com/in/alejandro-matias-olivos-rodriguez-95201b107">
-                        <img
-                            src="./src/assets/linkedin.png"
-                            alt="Logo de linkedin"
-                            className="logo-linkedin"
-                        />
-                    </a>
-                    <a href="https://github.com/SolidDogor">                            
-                        <img
-                            src="./src/assets/github.png"
-                            alt="Logo de github"
-                            className="logo-github"
-                        />
-                    </a>
+                    {SOCIAL_DATA.map((socialItem, index)=>
+                        <Social key={index} {...socialItem} />
+                    )}
                 </div>
                 <div className="seccion-cv">
                     <button className="boton-cv">
                         Descargar CV
                         <img
-                            src="./src/assets/archivo.png"
+                            src={cvImage}
                             alt="Descarga de archivo"
                             className="logo-descarga"
                         />

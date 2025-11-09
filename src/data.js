@@ -1,3 +1,12 @@
+//Presentation
+import instagramImage from './assets/Presentation/instagram.png';
+import linkedinImage from './assets/Presentation/linkedin.png';
+import githubImage from './assets/Presentation/github.png';
+
+//Projects
+import amoresDulcesImage from './assets/Projects/logo-amores-dulces.png';
+
+//Skills
 import cppImage from './assets/Technologies/cpp.png';
 import javaImage from './assets/Technologies/java.png';
 import golangImage from './assets/Technologies/golang.png';
@@ -6,7 +15,25 @@ import htmlImage from './assets/Technologies/html.png';
 import cssImage from './assets/Technologies/css.png';
 import reactImage from './assets/Technologies/react.png';
 
-import amoresDulcesImage from './assets/Projects/logo-amores-dulces.png';
+
+
+export const SOCIAL_DATA = [
+    {
+        url: 'https://www.instagram.com/alejandr0lirod',
+        imagePath: instagramImage,
+        social: 'instagram',
+    },
+    {
+        url: 'https://linkedin.com/in/alejandro-matias-olivos-rodriguez-95201b107',
+        imagePath: linkedinImage,
+        social: 'linkedin',
+    },
+    {
+        url: 'https://github.com/SolidDogor',
+        imagePath: githubImage,
+        social: 'github',
+    },
+];
 
 export const PROJECTS_DATA = [
     {

@@ -8,7 +8,7 @@
 .seccion-tecnologias {
   position: relative;
   height: 120px; 
-  width: 500%; 
+  width: 100%; 
   background-color: rgb(183,183,183);
   justify-items: center;
 }
