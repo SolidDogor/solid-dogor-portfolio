@@ -1,19 +1,19 @@
 //Presentation
-import instagramImage from './assets/Presentation/instagram.png';
-import linkedinImage from './assets/Presentation/linkedin.png';
+import instagramImage from './assets/Presentation/instagram.svg';
+import linkedinImage from './assets/Presentation/linkedin.svg';
 import githubImage from './assets/Presentation/github.png';
 
 //Projects
 import amoresDulcesImage from './assets/Projects/logo-amores-dulces.png';
 
 //Skills
-import cppImage from './assets/Technologies/cpp.png';
-import javaImage from './assets/Technologies/java.png';
-import golangImage from './assets/Technologies/golang.png';
-import javascriptImage from './assets/Technologies/javascript.png';
-import htmlImage from './assets/Technologies/html.png';
-import cssImage from './assets/Technologies/css.png';
-import reactImage from './assets/Technologies/react.png';
+import cppImage from './assets/Technologies/cpp.svg';
+import javaImage from './assets/Technologies/java.svg';
+import golangImage from './assets/Technologies/golang.svg';
+import javascriptImage from './assets/Technologies/javascript.svg';
+import htmlImage from './assets/Technologies/html.svg';
+import cssImage from './assets/Technologies/css.svg';
+import reactImage from './assets/Technologies/react.svg';
 
 
 
