@@ -1,10 +1,10 @@
 //Presentation
 import instagramImage from './assets/Presentation/instagram.svg';
 import linkedinImage from './assets/Presentation/linkedin.svg';
-import githubImage from './assets/Presentation/github.png';
+import githubImage from './assets/Presentation/github.svg';
 
 //Projects
-import amoresDulcesImage from './assets/Projects/logo-amores-dulces.png';
+import amoresDulcesImage from './assets/Projects/logo-amores-dulces.webp';
 
 //Skills
 import cppImage from './assets/Technologies/cpp.svg';
