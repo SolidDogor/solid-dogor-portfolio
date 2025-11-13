@@ -16,7 +16,7 @@ export default function Skills() {
       </div>
 
       <div className="skills-section">
-        <div className="descripcion">aleman ingles musica</div>
+        <div className="description">aleman ingles musica</div>
       </div>
     </section>
   );
