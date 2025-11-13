@@ -1,4 +1,4 @@
-.projects {
+.projects-section {
   /* background: linear-gradient(to bottom, rgba(26, 9, 63, 0.15) 0%, rgba(58, 5, 98, 0.91) 100%); */
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   padding-top: 20px;
 }
 
-.titulo {
+.tittle {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 32%, rgba(153, 153, 153, 1) 100%);
   background-clip: text;
   -webkit-background-clip: text; /* Para navegadores Webkit */
@@ -20,7 +20,7 @@
   font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-.proyectos {
+.projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -29,11 +29,11 @@
 }
 
 @media (max-width: 800px) {
-  .titulo {
+  .tittle {
     font-size: 30px;
   }
 
-  .proyectos {
+  .projects-section {
     padding: 84px 20px;
   }
 }

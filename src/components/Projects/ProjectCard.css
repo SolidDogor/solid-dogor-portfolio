@@ -1,4 +1,4 @@
-.proyect-link {
+.project-link {
   text-decoration: none;
 }
 
@@ -14,12 +14,12 @@
   transform: scale(1.015);
 }
 
-.imagen-proyecto {
+.project-image {
   max-width: 265px;
   max-height: 180px;
 }
 
-.nombre-proyecto {
+.project-name {
   background: linear-gradient(to bottom, #ff9730, #ffffff);
   background-clip: text;
   -webkit-background-clip: text; /* Para navegadores Webkit */
@@ -28,7 +28,7 @@
   line-height: 1.1;
 }
 
-.descripcion-proyecto {
+.project-description {
   max-width: 265px;
   max-height: 106px;
   color: #cecece;

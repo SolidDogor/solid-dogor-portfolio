@@ -5,17 +5,17 @@ import { TECHNOLOGIES_DATA } from '../../data.js';
 export default function Skills() {
   return (
     <section className="skills">
-      <div className="titulo">Tecnologías y Saberes</div>
-      <div className="seccion-tecnologias">
-        <div className="fondo-tecnologias" />
-        <div className="tecnologias">
+      <div className="tittle">Tecnologías y Saberes</div>
+      <div className="tech-section">
+        <div className="tech-background" />
+        <div className="tech">
           {TECHNOLOGIES_DATA.map((technologieItem, index) => (
             <TechIcon key={index} {...technologieItem} />
           ))}
         </div>
       </div>
 
-      <div className="saberes">
+      <div className="skills-section">
         <div className="descripcion">aleman ingles musica</div>
       </div>
     </section>

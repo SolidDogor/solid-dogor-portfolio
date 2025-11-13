@@ -4,9 +4,9 @@ import { PROJECTS_DATA } from '../../data.js';
 
 export default function Projects() {
   return (
-    <div className="projects">
-      <div className="titulo">Proyectos</div>
-      <div className="proyectos">
+    <div className="projects-section">
+      <div className="tittle">Proyectos</div>
+      <div className="projects">
         {PROJECTS_DATA.map((projectItem, index) => (
           <ProjectCard key={index} {...projectItem} />
         ))}
