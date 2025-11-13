@@ -1,13 +1,15 @@
 .tech-icon {
-    pointer-events: none; 
-    position: relative; 
-    inset: 0px; 
-    height: 80px; 
-    max-width: none; 
-    flex-shrink: 0; 
-    object-fit: cover;
+  position: relative;
+  flex-shrink: 0;
+  inset: 0px;
+  max-width: none;
+  height: 80px;
+  object-fit: cover;
+  pointer-events: none;
 }
 
 @media (max-width: 800px) {
-    .tech-icon { height: 35px; }
+  .tech-icon {
+    height: 35px;
+  }
 }

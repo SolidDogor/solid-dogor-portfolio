@@ -1,36 +1,36 @@
 .skills {
-  padding: 50px;
   display: grid;
-  gap: 55px;
   justify-items: center;
+  gap: 55px;
+  padding: 50px;
 }
 
 .seccion-tecnologias {
   position: relative;
-  height: 120px; 
-  width: 100%; 
-  background-color: rgb(183,183,183);
   justify-items: center;
+  background-color: rgb(183, 183, 183);
+  width: 100%;
+  height: 120px;
 }
 
 .fondo-tecnologias {
-  position: absolute; 
+  position: absolute;
+  top: 10px;
+  right: 0px;
   bottom: 10px;
   left: 0px;
-  right: 0px;
-  top: 10px;
-  background-color: rgb(255,226,226);
+  background-color: rgb(255, 226, 226);
 }
 
 .tecnologias {
-  position: absolute; 
-  margin: 20px 0px;
-  box-sizing: border-box; 
-  display: flex; 
+  display: flex;
+  position: absolute;
   align-content: stretch;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 60px;
+  box-sizing: border-box;
+  margin: 20px 0px;
   padding: 0px 150px;
 }
 
@@ -42,32 +42,32 @@
 
 @media (max-width: 800px) {
   .skills {
-    padding: 30px 0px;
     gap: 100px;
+    padding: 30px 0px;
   }
 
   .seccion-tecnologias {
-    height: 90px; 
+    height: 90px;
   }
 
   .fondo-tecnologias {
-    position: absolute; 
+    position: absolute;
+    top: 10px;
+    right: 0px;
     bottom: 10px;
     left: 0px;
-    right: 0px;
-    top: 10px;
-    background-color: rgb(255,226,226);
+    background-color: rgb(255, 226, 226);
   }
 
   .tecnologias {
-    position: absolute; 
-    margin: 28px 0px;
-    box-sizing: border-box; 
-    display: flex; 
+    display: flex;
+    position: absolute;
     align-content: stretch;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 15px;
+    box-sizing: border-box;
+    margin: 28px 0px;
     padding: 0px 0px;
   }
 

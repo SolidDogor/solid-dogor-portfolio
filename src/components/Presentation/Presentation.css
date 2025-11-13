@@ -2,24 +2,24 @@
   /* background: linear-gradient(to bottom, rgba(26,9,63,0.15) 24%, rgba(68, 24, 165, 0.15) 75%); */
   display: grid;
   grid-template-columns: auto 1fr;
-  align-items: center;
   column-gap: 115px;
+  align-items: center;
   padding: 150px 150px;
 }
 
 .foto-perfil {
+  border-radius: 100px;
   width: 311px;
   height: 316px;
-  border-radius: 100px;
   object-fit: cover;
 }
 
 .informacion {
-  max-width: 562px;
-  max-height: 318px;
   display: flex;
   flex-direction: column;
   gap: 23px;
+  max-width: 562px;
+  max-height: 318px;
 }
 
 .nombre {
@@ -32,17 +32,17 @@
 }
 
 .descripcion {
-  color: #CECECE;
-  font-family: 'Fira Code', monospace;
+  color: #cecece;
   font-size: 18px;
+  font-family: 'Fira Code', monospace;
 }
 
 .seccion-accesibles {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   width: auto;
-  justify-content: space-between;
 }
 
 .redes {
@@ -51,26 +51,28 @@
 }
 
 .redes img {
+  transition: transform 0.15s ease;
   height: clamp(28px, 3.4vw, 50px);
-  transition: transform .15s ease;
 }
-.redes img:hover { transform: scale(1.1); }
+.redes img:hover {
+  transform: scale(1.1);
+}
 
 .boton-cv {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 10px;
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: clamp(14px, 1.4vw, 25px);
-  padding: 12px 18px;
   border-radius: 20px;
+  padding: 12px 18px;
+  font-size: clamp(14px, 1.4vw, 25px);
+  font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .logo-descarga {
-  height: clamp(22px, 3vw, 60px);
-  width: auto;
   display: block;
+  width: auto;
+  height: clamp(22px, 3vw, 60px);
 }
 
 @media (max-width: 800px) {
@@ -82,9 +84,9 @@
   }
 
   .foto-perfil {
+    border-radius: 75px;
     width: 265px;
     height: 266px;
-    border-radius: 75px;
   }
 
   .informacion {
@@ -92,13 +94,23 @@
     max-height: 258px;
   }
 
-  .nombre { font-size: 30px; }
+  .nombre {
+    font-size: 30px;
+  }
 
-  .descripcion { font-size: 12px; }
+  .descripcion {
+    font-size: 12px;
+  }
 
-  .redes { gap: 20px; }
+  .redes {
+    gap: 20px;
+  }
 
-  .redes img { height: 40px; }
+  .redes img {
+    height: 40px;
+  }
 
-  .boton-cv { font-size: 12px; }
+  .boton-cv {
+    font-size: 12px;
+  }
 }
