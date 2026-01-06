@@ -7,17 +7,17 @@ import { SOCIAL_DATA } from '../../data';
 export default function Presentation() {
   return (
     <div className="presentation">
-      <div className="profile-photo">
-        <img src={profileImage} alt="Profile photo" className="profile-photo" />
+      <div className="profile-picture">
+        <img src={profileImage} alt="Profile picture" className="profile-picture" />
       </div>
       <div className="information">
-        <div className="name">
-          <p>Alejandro Olivos</p>
-        </div>
+        <h1 className="name">
+          Alejandro Olivos
+        </h1>
         <div className="description">
           <p>
             Apasionado por la programación y la música. A raíz de los varios años que llevo
-            enseñando, me gusta desarollar apps relacionadas al aprendizaje, y por qué no, algo de
+            enseñando, me gusta desarrollar apps relacionadas al aprendizaje, y por qué no, algo de
             música y juegos :)
           </p>
         </div>

@@ -1,9 +1,8 @@
 import Presentation from './components/Presentation/Presentation';
 import Jobs from './components/Jobs/Jobs';
 import Projects from './components/Projects/Projects';
-import Skills from './components/Skills/Skills';
+import Technologies from './components/Technologies/Technologies';
 import About from './components/About/About';
-import Contact from './components/Contact/Contact';
 import './App.css';
 
 function App() {
@@ -12,9 +11,8 @@ function App() {
       <Presentation />
       {/* <Jobs/> */}
       <Projects />
-      <Skills />
+      <Technologies />
       <About />
-      <Contact />
     </div>
   );
 }

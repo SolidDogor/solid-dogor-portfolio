@@ -1,112 +1,160 @@
 .presentation {
-  /* background: linear-gradient(to bottom, rgba(26,9,63,0.15) 24%, rgba(68, 24, 165, 0.15) 75%); */
-  display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 115px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 150px 150px;
+  gap: 50px;
+  margin: 70px 0px;
+  background: linear-gradient(to bottom, #1a093f 24%, #3318a5 75%);
 }
 
-.profile-photo {
-  border-radius: 100px;
-  width: 311px;
-  height: 316px;
-  object-fit: cover;
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  max-width: 250px;
 }
 
 .information {
   display: flex;
   flex-direction: column;
-  gap: 23px;
-  max-width: 562px;
-  max-height: 318px;
+  align-items: center;
+  gap: 40px;
 }
 
 .name {
   background: linear-gradient(to bottom, #ff9730, #ffffff);
   background-clip: text;
-  -webkit-background-clip: text; /* Para navegadores Webkit */
+  -webkit-background-clip: text;
   color: transparent;
-  font-size: clamp(1.8rem, calc(1.8vw + 1rem), 4rem);
   line-height: 1.1;
 }
 
 .description {
-  color: #cecece;
-  font-size: 18px;
-  font-family: 'Fira Code', monospace;
+  max-width: 100%;
 }
 
 .socials-section {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  width: auto;
+  gap: 20px;
+  width: 100%;
 }
 
 .socials {
   display: flex;
-  gap: 40px;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .socials img {
-  transition: transform 0.15s ease;
-  height: clamp(28px, 3.4vw, 50px);
+  max-width: 60px;
 }
+
 .socials img:hover {
-  transform: scale(1.1);
+  scale: 1.1;
 }
 
 .cv-button {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
-  border-radius: 20px;
-  padding: 12px 18px;
-  font-size: clamp(14px, 1.4vw, 25px);
-  font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .download-logo {
-  display: block;
-  width: auto;
-  height: clamp(22px, 3vw, 60px);
+  max-width: 50px;
 }
 
-@media (max-width: 800px) {
-  .presentation {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px 20px;
-  }
-
-  .profile-photo {
-    border-radius: 75px;
-    width: 265px;
-    height: 266px;
+/*Tablets*/
+@media (width >= 768px) {
+  .profile-picture {
+    max-width: 350px;
   }
 
   .information {
-    max-width: 335px;
-    max-height: 258px;
+    gap: 50px;
   }
 
   .description {
-    font-size: 12px;
+    max-width: 621px;
+  }
+
+  .socials-section {
+    flex-direction: row;
+    justify-content: center;
   }
 
   .socials {
+    display: flex;
+    flex-direction: row;
     gap: 20px;
   }
 
   .socials img {
-    height: 40px;
+    max-width: 80px;
   }
 
-  .cv-button {
-    font-size: 12px;
+  .download-logo {
+    max-width: 70px;
+  }
+}
+
+/*Laptops*/
+@media (width >= 1280px) {
+  .presentation {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    padding: 50px 98px;
+  }
+
+  .profile-picture {
+    max-width: 450px;
+  }
+
+  .information {
+    gap: 65px;
+    height: 500px;
+  }
+
+  .description {
+    max-width: 641px;
+  }
+
+  .socials img {
+    max-width: 100px;
+  }
+
+  .download-logo {
+    max-width: 90px;
+  }
+}
+
+/*Monitores*/
+@media (width >= 1920px) {
+  .presentation {
+    justify-content: space-around;
+    margin: 0px;
+    padding: 198px 130px;
+  }
+
+  .profile-picture {
+    max-width: 686px;
+  }
+
+  .information {
+    gap: 140px;
+  }
+
+  .description {
+    max-width: 686px;
+  }
+
+  .socials img {
+    max-width: 120px;
+  }
+
+  .download-logo {
+    max-width: 110px;
   }
 }

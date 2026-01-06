@@ -1,19 +1,5 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-html,
 body {
-  min-height: 100%;
-}
-
-#root {
-  min-height: 100%;
-}
-
-/* Fondo y tipografía global */
-body {
+  margin: 0px;
   background: linear-gradient(
     to bottom,
     #1a093f 10%,
@@ -22,8 +8,26 @@ body {
     #000000 75%,
     #121623 100%
   );
+  padding: 0px 20px;
+  min-height: 100%;
+}
+
+h1 {
+  margin: 0;
   color: #d8b9d1;
+  font-size: 36px;
+  line-height: 0.9;
   font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 0;
+  color: #d8b9d1;
+  font-size: 16px;
+  line-height: 1.1;
+  font-family: 'Fira Code';
+  letter-spacing: -0.02em;
 }
 
 /* Imágenes y botones genéricos */
@@ -43,4 +47,33 @@ button {
 }
 button:hover {
   opacity: 0.8;
+}
+
+/*Tablets*/
+@media (width >= 768px) {
+  h1 {
+    font-size: 65px;
+  }
+
+  p {
+    font-size: 28px;
+  }
+}
+
+/*Laptops*/
+@media (width >= 1280px) {
+  h1 {
+    font-size: 75px;
+  }
+}
+
+/*Monitores*/
+@media (width >= 1920px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  p {
+    font-size: 32px;
+  }
 }
