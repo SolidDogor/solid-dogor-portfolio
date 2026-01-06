@@ -1,0 +1,54 @@
+.technologies-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  padding: 70px 0px;
+}
+
+.title {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 32%, rgba(153, 153, 153, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1.1;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.technologies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+
+/*Tablets*/
+@media (width >= 768px) {
+  .projects-section {
+    padding: 50px 0px;
+  }
+
+  .projects {
+    gap: 100px;
+  }
+}
+
+/*Laptops*/
+@media (width >= 1280px) {
+  .projects-section {
+    gap: 120px;
+    padding: 240px;
+  }
+  .projects {
+    gap: 150px;
+  }
+}
+
+/*Monitores*/
+@media (width >= 1920px) {
+  .projects {
+    gap: 200px;
+  }
+}
