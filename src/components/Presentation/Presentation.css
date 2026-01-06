@@ -43,7 +43,9 @@
 .socials {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 20px;
+  width: 280px;
 }
 
 .socials img {
@@ -56,10 +58,28 @@
 
 .cv-button {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #00cfff;
+  width: 280px;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cv-text {
+  padding: 0px 15px;
+}
+
+.cv-button:hover {
+  opacity: 0.8;
 }
 
 .download-logo {
+  padding: 0px 15px;
   max-width: 50px;
 }
 
@@ -79,17 +99,26 @@
 
   .socials-section {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .socials {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
+    width: 100%;
   }
 
   .socials img {
     max-width: 80px;
+  }
+
+  .cv-button {
+    height: 80px;
+  }
+
+  .cv-button {
+    font-size: 15px;
   }
 
   .download-logo {
@@ -112,12 +141,11 @@
   }
 
   .description {
-    max-width: 641px;
+    max-width: 700px;
   }
 
   .socials-section {
     gap: 40px;
-    max-width: 641px;
   }
 
   .socials {
@@ -128,7 +156,17 @@
     max-width: 100px;
   }
 
+  .cv-button {
+    height: 100px;
+  }
+
+  .cv-text {
+    padding: 0px 10px;
+    font-size: 22px;
+  }
+
   .download-logo {
+    padding: 0px 10px;
     max-width: 90px;
   }
 }

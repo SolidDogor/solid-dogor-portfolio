@@ -21,6 +21,10 @@ h1 {
   letter-spacing: -0.02em;
 }
 
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
 p {
   margin: 0;
   color: #d8b9d1;
@@ -34,19 +38,6 @@ p {
 img {
   display: block;
   max-width: 100%;
-}
-
-button {
-  transition: opacity 0.2s;
-  cursor: pointer;
-  border-radius: 20px;
-  background-color: #00cfff;
-  padding: 8px 16px;
-  color: #000;
-  font-weight: 600;
-}
-button:hover {
-  opacity: 0.8;
 }
 
 /*Tablets*/
