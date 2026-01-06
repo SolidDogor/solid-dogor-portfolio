@@ -1,0 +1,89 @@
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-style: solid;
+  border-color: #ff4e4e;
+  border-radius: 50px;
+  padding: 10px 0px 20px 0px;
+  width: 280px;
+}
+
+.card-image {
+  border-radius: 50px;
+  max-width: 250px;
+}
+
+.card-information {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 250px;
+}
+
+.card-name {
+  background: linear-gradient(to bottom, #ff9730, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1.1;
+}
+
+.card-description {
+  color: #cecece;
+}
+
+.card:hover {
+  transform: scale(1.004);
+  border-color: #f12222;
+}
+
+/*Tablets*/
+@media (width >= 768px) {
+  .card {
+    width: 600px;
+  }
+
+  .card-image {
+    max-width: 570px;
+  }
+
+  .card-information {
+    max-width: 570px;
+  }
+}
+
+/*Laptops*/
+@media (width >= 1280px) {
+  .card {
+    width: 650px;
+  }
+
+  .card-image {
+    max-width: 620px;
+  }
+
+  .card-information {
+    max-width: 620px;
+  }
+}
+
+/*Monitores*/
+@media (width >= 1920px) {
+  .card {
+    width: 700px;
+  }
+
+  .card-image {
+    max-width: 670px;
+  }
+
+  .card-information {
+    max-width: 670px;
+  }
+}

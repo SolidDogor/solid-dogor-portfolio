@@ -1,14 +1,14 @@
-import ProjectCard from './ProjectCard';
+import Card from '../Card/Card.jsx';
 import './Projects.css';
 import { PROJECTS_DATA } from '../../data.js';
 
 export default function Projects() {
   return (
     <div className="projects-section">
-      <div className="tittle">Proyectos</div>
+      <h1 className="title">Proyectos</h1>
       <div className="projects">
         {PROJECTS_DATA.map((projectItem, index) => (
-          <ProjectCard key={index} {...projectItem} />
+          <Card key={index} {...projectItem} />
         ))}
       </div>
     </div>

@@ -1,39 +1,50 @@
 .projects-section {
-  /* background: linear-gradient(to bottom, rgba(26, 9, 63, 0.15) 0%, rgba(58, 5, 98, 0.91) 100%); */
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  gap: 32px;
-  padding-top: 20px;
+  gap: 80px;
+  background: linear-gradient(to right, rgba(26, 9, 63, 0.15), rgba(58, 5, 98, 0.91));
+  padding: 70px 0px;
 }
 
-.tittle {
+.title {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 32%, rgba(153, 153, 153, 1) 100%);
   background-clip: text;
-  -webkit-background-clip: text; /* Para navegadores Webkit */
-  max-height: 51px;
+  -webkit-background-clip: text;
   color: transparent;
-  font-size: 40px;
   line-height: 1.1;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 41px;
-  padding: 150px 150px;
+  gap: 50px;
 }
 
-@media (max-width: 800px) {
-  .tittle {
-    font-size: 30px;
+/*Tablets*/
+@media (width >= 768px) {
+  .projects-section {
+    padding: 50px 0px;
   }
 
+  .projects {
+    gap: 100px;
+  }
+}
+
+/*Laptops*/
+@media (width >= 1280px) {
   .projects-section {
-    padding: 84px 20px;
+    gap: 120px;
+    padding: 240px;
+  }
+  .projects {
+    gap: 150px;
+  }
+}
+
+/*Monitores*/
+@media (width >= 1920px) {
+  .projects {
+    gap: 200px;
   }
 }
