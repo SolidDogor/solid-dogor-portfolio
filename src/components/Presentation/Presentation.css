@@ -4,7 +4,7 @@
   align-items: center;
   gap: 50px;
   margin: 70px 0px;
-  background: linear-gradient(to bottom, #1a093f 24%, #3318a5 75%);
+  background: linear-gradient(to top, #1a093f 24%, #3318a5 75%);
 }
 
 .profile-picture {
@@ -66,12 +66,12 @@
 
 /*Tablets*/
 @media (width >= 768px) {
-  .profile-picture {
-    max-width: 350px;
+  .presentation {
+    margin: 50px 0px;
   }
 
-  .information {
-    gap: 50px;
+  .profile-picture {
+    max-width: 350px;
   }
 
   .description {
@@ -102,23 +102,27 @@
 @media (width >= 1280px) {
   .presentation {
     flex-direction: row;
+    align-content: center;
     justify-content: space-around;
-    align-items: center;
     margin: 0px;
-    padding: 50px 98px;
+    padding: 240px 98px;
   }
 
   .profile-picture {
     max-width: 450px;
   }
 
-  .information {
-    gap: 65px;
-    height: 500px;
-  }
-
   .description {
     max-width: 641px;
+  }
+
+  .socials-section {
+    gap: 40px;
+    max-width: 641px;
+  }
+
+  .socials {
+    gap: 40px;
   }
 
   .socials img {
@@ -133,17 +137,11 @@
 /*Monitores*/
 @media (width >= 1920px) {
   .presentation {
-    justify-content: space-around;
-    margin: 0px;
-    padding: 198px 130px;
+    padding: 240px 130px;
   }
 
   .profile-picture {
     max-width: 686px;
-  }
-
-  .information {
-    gap: 140px;
   }
 
   .description {

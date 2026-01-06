@@ -52,7 +52,7 @@ button:hover {
 /*Tablets*/
 @media (width >= 768px) {
   h1 {
-    font-size: 65px;
+    font-size: 50px;
   }
 
   p {
@@ -63,14 +63,14 @@ button:hover {
 /*Laptops*/
 @media (width >= 1280px) {
   h1 {
-    font-size: 75px;
+    font-size: 60px;
   }
 }
 
 /*Monitores*/
 @media (width >= 1920px) {
   h1 {
-    font-size: 100px;
+    font-size: 80px;
   }
 
   p {
