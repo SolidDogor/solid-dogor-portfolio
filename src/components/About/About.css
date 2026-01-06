@@ -1,3 +1,95 @@
-.about {
-  padding-top: 200px;
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 70px 0px;
+}
+
+.title {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 32%, rgba(153, 153, 153, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1.1;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.about-information {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-description {
+  color: white;
+}
+.about-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.code-ron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 315px;
+  color: white;
+}
+
+/*Tablets*/
+@media (width >= 768px) {
+  .about-section {
+    padding: 50px 0px;
+  }
+
+  .about-information {
+    gap: 100px;
+  }
+
+  .code-ron {
+    width: 415px;
+  }
+}
+
+/*Laptops*/
+@media (width >= 1280px) {
+  .about-section {
+    gap: 120px;
+    padding: 240px;
+  }
+  .about-information {
+    align-items: center;
+    gap: 50px;
+  }
+
+  .about-description {
+    width: 1200px;
+  }
+
+  .about-right {
+    flex-direction: row;
+  }
+
+  .code-ron {
+    width: 515px;
+  }
+}
+
+/*Monitores*/
+@media (width >= 1920px) {
+  .about-section {
+    gap: 170px;
+  }
+
+  .code-ron {
+    width: 615px;
+  }
 }
