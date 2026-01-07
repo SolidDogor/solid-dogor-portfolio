@@ -29,7 +29,7 @@ export default function Presentation() {
             ))}
           </div>
           <div className="cv-section">
-            <a download={true} className="cv-button" href={cvPdf}>
+            <a download="cv-alejandro-olivos.pdf" className="cv-button" href={cvPdf}>
               <h2 className="cv-text">Descargar CV</h2>
               <img src={cvImage} alt="CV download" className="download-logo" />
             </a>
