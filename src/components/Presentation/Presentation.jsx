@@ -1,7 +1,7 @@
 import './Presentation.css';
 import profileImage from '../../assets/Presentation/foto-perfil.webp';
 import cvImage from '../../assets/Presentation/archivo.svg';
-import cvPdf from '../../assets/Presentation/prueba.pdf';
+import cvPdf from '../../assets/Presentation/cv.pdf';
 import Social from './Social';
 import { SOCIAL_DATA } from '../../data';
 
