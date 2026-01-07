@@ -1,3 +1,13 @@
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Chrome, Edge, Safari */
+html::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0px;
   background: linear-gradient(
@@ -38,6 +48,11 @@ p {
 img {
   display: block;
   max-width: 100%;
+}
+
+button {
+  border: none;
+  background-color: transparent;
 }
 
 /*Tablets*/

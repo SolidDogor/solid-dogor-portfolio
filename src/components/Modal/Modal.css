@@ -1,0 +1,51 @@
+.modal-overlay {
+  display: grid;
+  position: fixed;
+  place-items: center;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.modal {
+  position: relative;
+  border-radius: 20px;
+  background: #0f0f1a;
+  padding: 1.5rem;
+  max-width: min(90vw, 600px);
+  max-height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  color: white;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-title {
+  margin: 0 0 1rem 0;
+}
+
+.modal-image {
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+.modal-content {
+  line-height: 1.5;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 1.25rem;
+}

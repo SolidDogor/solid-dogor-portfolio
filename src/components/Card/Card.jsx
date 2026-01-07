@@ -4,25 +4,25 @@ export default function Card({
   imagePath,
   title,
   description,
-  url,
-  as: Heading = 'h1'
+  onClick
 }) {
   return (
-    <a href={url} className="card-link">
+    <button className="card-link" onClick={onClick}>
       <section className="card">
         {imagePath && (
           <div className="card-image">
-            <img src={imagePath} alt={title} className="card-image__img" />
+            <img src={imagePath} alt={title} />
           </div>
         )}
 
         <div className="card-information">
-          <Heading className="card-name">{title}</Heading>
+          <h1 className="card-name">{title}</h1>
           {description && (
             <p className="card-description">{description}</p>
           )}
         </div>
       </section>
-    </a>
+    </button>
   );
 }
+

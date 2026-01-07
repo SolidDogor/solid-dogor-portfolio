@@ -182,11 +182,15 @@
   }
 
   .description {
-    max-width: 686px;
+    max-width: 750px;
   }
 
   .socials img {
     max-width: 120px;
+  }
+
+  .cv-button {
+    height: 120px;
   }
 
   .download-logo {

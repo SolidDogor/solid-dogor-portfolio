@@ -37,6 +37,7 @@
   align-items: center;
   gap: 20px;
 }
+
 .code-ron {
   display: flex;
   flex-direction: column;
