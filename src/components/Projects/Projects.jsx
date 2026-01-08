@@ -27,7 +27,12 @@ export default function Projects() {
           image={modalContent.image}
           onClose={() => setModalContent(null)}
         >
-          <p>{modalContent.content}</p>
+          {Array.isArray(modalContent.content)
+            ? modalContent.content.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))
+            : <p>{modalContent.content}</p>
+          }
 
           {modalContent.link && (
             <a

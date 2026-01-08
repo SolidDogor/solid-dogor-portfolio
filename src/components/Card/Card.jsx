@@ -11,7 +11,7 @@ export default function Card({
       <section className="card">
         {imagePath && (
           <div className="card-image">
-            <img src={imagePath} alt={title} />
+            <img src={imagePath} alt={title} className="card-image"/>
           </div>
         )}
 

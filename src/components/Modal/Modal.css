@@ -35,8 +35,13 @@
   height: auto;
 }
 
-.modal-content {
-  line-height: 1.5;
+.modal-content p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.modal-content p + p {
+  margin-top: 12px;
 }
 
 .modal-close {
