@@ -5,6 +5,7 @@ import linkedinImage from './assets/Presentation/linkedin.svg';
 
 //Projects
 import amoresDulcesImage from './assets/Projects/logo-amores-dulces.webp';
+import forenseekImage from './assets/Projects/forenseek.svg';
 
 //Technologies
 import canvaImage from './assets/Technologies/canva.svg';
@@ -57,6 +58,42 @@ export const PROJECTS_DATA = [
         Incluye catálogo, pedidos por WhatsApp y diseño responsive.
       `,
       link: 'https://www.instagram.com/amores.dulces.postres',
+    },
+  },
+  {
+    title: 'Motor de Indexación B+ Tree',
+    description: 'Estructura de datos en C++ capaz de manejar más de 33 millones de registros sin usar una base de datos',
+    modal: {
+      content:
+      `
+      Proyecto universitario desarrollado para el curso de Estructuras de Datos Avanzadas. El objetivo del proyecto fue diseñar una 
+      estructura de datos capaz de almacenar y consultar información de millones de ciudadanos simulando una base de datos nacional, 
+      sin utilizar un sistema gestor de bases de datos.
+      
+      Como solución, se implementó un B+ Tree en C++ capaz de manejar más de 33 millones de registros generados de manera aleatoria, 
+      permitiendo realizar inserciones y búsquedas eficientes por clave. La estructura incluye persistencia en disco, de modo que la 
+      información almacenada puede ser recuperada en memoria cada vez que el programa se inicia.
+  
+      Mi rol en el proyecto fue la implementación completa del sistema, así como el testeo de rendimiento y el análisis de complejidad 
+      tanto temporal como espacial. El principal reto afrontado fue el manejo de memoria a gran escala y el balance entre rendimiento y 
+      almacenamiento al trabajar con volúmenes de datos elevados.
+      `,
+    },
+  },
+  {
+    imagePath: forenseekImage,
+    title: 'Analizador de Secuencias de ADN',
+    description: 'Sistema web que identifica coincidencias de ADN usando algoritmos de búsqueda eficiente',
+    modal: {
+      image: forenseekImage,
+      content:
+      `
+      Proyecto universitario desarrollado para el curso de Programación Competitiva, basado en un caso simulado de criminalística. El objetivo fue desarrollar un sistema capaz de identificar posibles sospechosos a partir de la comparación de una muestra de ADN con una base de datos de secuencias genéticas proporcionadas en formato CSV.
+      
+      El sistema permite a los usuarios registrarse, cargar archivos CSV con las cadenas de ADN de los sospechosos e ingresar un patrón de búsqueda. El backend procesa esta información y ejecuta un programa nativo en C++ que implementa el algoritmo KMP para realizar búsquedas eficientes de subcadenas. Los resultados obtenidos son devueltos al frontend en formato JSON, indicando si existen coincidencias y los nombres de los sospechosos identificados.
+      
+      Mi rol principal fue el desarrollo del backend y la integración con el ejecutable en C++, además de la implementación del algoritmo de búsqueda. Uno de los principales retos fue la comunicación entre el backend y el programa nativo, así como las limitaciones de despliegue, por lo que el sistema quedó funcionando en un entorno local.
+      `,
     },
   },
 ];
