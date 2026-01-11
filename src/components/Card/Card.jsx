@@ -20,6 +20,7 @@ export default function Card({
           {description && (
             <p className="card-description">{description}</p>
           )}
+          <p><u>Ver más</u></p>
         </div>
       </section>
     </button>
